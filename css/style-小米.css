@@ -154,7 +154,7 @@
  	z-index: 100;
  	box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
 	font-size: 14px;
-/*  	display: none; */
+4e/*  	display: none; */
  	transition: all .8s;
  	text-align: center;
  	line-height: 100px;
@@ -358,9 +358,24 @@
 	color:red;
 
 
+
+}
+.banner .leftbox a .ycBox.a{
+	background-image: url("../img/mi-3.png");
+}
+
+.banner .leftbox a .ycBox ul{
+	left: 0;
+	top: 0;
+}
+.banner .leftbox a .ycBox ul li{
+	width: 234px;
+	height: 60px;
+	float: left;
 }
 .banner .leftbox a:hover{
 	background: #FF6700;
+	
 }
 /* 小米推荐图 */
 .push{
@@ -479,6 +494,7 @@
 	margin-top: 17px;
 	text-align: center;
 	line-height: 24px;
+	color: rgba(0, 0, 0, 0.6);;
 }
 .sshop i.icon{
 	border-right: none;
@@ -520,11 +536,22 @@
 	float: left;
 	margin-left: 14px;
 }
-
-.sbox .box1:hover{
-	box-shadow: 3px 3px 9px #B9B9B9;
-	margin-top: -2px;
+.sbox .box1.a{
+	border-top: 1px solid red;
 }
+.sbox .box1.b{
+	border-top: 1px solid greenyellow;
+}
+.sbox .box1.c{
+	border-top: 1px solid orange;
+}
+.sbox .box1.d{
+	border-top: 1px solid yellow;
+}
+/*.sbox .box1:hover{*/
+	/*box-shadow: 3px 3px 9px #B9B9B9;*/
+	/*margin-top: -2px;*/
+/*}*/
 .sbox h2{
 	margin-top: 40px;
 	text-align: center;
@@ -688,15 +715,18 @@
 .iphoneh2 .abox1{
 	float: right;
 	text-align: center;
-	height: 58px;
-	line-height: 58px;
+	margin-top:14px ;
+	height: 30px;
+	line-height: 30px;
+	/*padding-bottom: 3px;*/
 	margin-left: 20px;
 	font-size: 16px;
 	transition: all 0.8s;
 }
 .iphoneh2 .abox1:hover{
 	color: orange;
-	text-decoration: underline; 
+	border-bottom: 1px solid orange;
+
 
 }
 .bigbox .twobox{
@@ -704,6 +734,7 @@
 	height: 614px;
 	margin: 0 auto;
 	background: #F5F5F5;
+	position: relative;
 }
 .bigbox .twobox .leftbox{
 	width: 234px;
@@ -720,6 +751,11 @@
 	width: 992px;
 	height: 614px;
 	float: left;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+
 }
 .bigbox .twobox .rightbox .box{
 	float: left;
@@ -909,6 +945,7 @@
 	margin-top: 17px;
 	text-align: center;
 	line-height: 24px;
+	color: rgba(0, 0, 0, 0.6);
 }
 /*.iphoneh2 .a{*/
 	/*border-right: none;*/
