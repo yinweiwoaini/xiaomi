@@ -1,0 +1,1394 @@
+/*
+* @Author: asusaa
+* @Date:   2018-08-02 08:58:23
+* @Last Modified by:   asusaa
+* @Last Modified time: 2018-08-07 19:57:08
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+.butem{
+	display: block;
+	width: 82px;
+	height: 90px;
+	position: fixed;
+	right: 0px;
+	top: 360px;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+
+}
+
+.butem img{
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 20px auto 0;
+
+}
+.e3 img{
+	background-image: url('../img/米米1.png');
+	background-size: 30px 30px;
+	inset: 11;
+}
+.e1 img{
+	background-image: url('../img/米米a2.png');
+	background-size: 30px 30px;
+}
+.e2 img{
+	background-image: url('../img/米米a3.png');
+	background-size: 30px 30px;
+}
+.butem h4{
+	font-weight: normal;
+	text-align: center;
+	margin-top: 2px;	
+	font-size: 14px;
+	color:  #757575;
+}
+.e3:hover img{
+	background-image: url('../img/咪咪1.png');
+}
+.e1:hover img{
+	background-image: url('../img/米米2.png');
+}
+.e2:hover img{
+	background-image: url('../img/米米3.png');
+}
+.butem:hover h4{
+	color: orange;
+
+}
+.e1{
+	
+	position: fixed;
+	right: 0px;
+	top: 450px;
+
+}
+.e2{
+	
+	position: fixed;
+	right: 0px;
+	top: 540px;
+
+}
+.topimg{
+	width: 100%;
+	height: 120px;
+	background-image: url('../img/m1.jpg');
+	background-size: cover;
+	background-position: center 0;
+
+}
+/* 标题栏样式 */
+.titlebar{
+	width: 100%;
+	height: 40px;
+	background: #333333;
+	border-bottom: solid 1px #545454;
+}
+.titlebar .box{
+	width: 1226px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.titlebar .leftbox{
+	float: left;
+	width: 492px;
+	height: 40px;
+}
+.titlebar .leftbox a{
+
+	line-height: 40px;
+	text-decoration: none;
+	color:#A79F90;
+	font-size: 12px;
+/* 	margin-left: 3px; */
+	
+}
+.titlebar .leftbox a:hover{
+	color: #ffffff;
+}
+
+.titlebar #mgl{
+	margin-left: 0px; 
+ }
+ .titlebar .rightbox1{
+ 	float: right;
+ 	width: 120px;
+ 	height: 40px;
+	text-align: center;
+	position: relative;
+ }
+ .titlebar .rightbox1 a{
+ 	line-height: 40px;
+	text-decoration: none;
+
+	color:#A79F90;
+	font-size: 12px;
+ }.titlebar .rightbox1 a:hover{
+ 	color: #ffffff;
+ }
+.titlebar .eg3:hover{
+	background: #ffffff;
+}
+.titlebar .eg3:hover a{
+	color: orange;
+}
+.titlebar .eg3:hover .xbox{
+	height: 100px;
+	
+}
+ .titlebar .rightbox1 .xbox{
+ 	width: 280px;
+ 	overflow: hidden;
+ 	height:0px;
+ 	position: absolute;
+ 	top: 40px;
+ 	right: 0px;
+ 	z-index: 100;
+ 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+	font-size: 14px;
+/*  	display: none; */
+ 	transition: all .8s;
+ 	text-align: center;
+ 	line-height: 100px;
+ 	background: #ffffff;
+ }
+.titlebar .eg1{
+	width: 68px;
+ }
+.titlebar .eg2{
+	width: 40px;
+ }
+ /* 小米发骚节 */
+.startbar{
+	width: 1226px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.startbar .icon{
+	font-size: 30px;
+}
+.startbar a{
+	display: block;
+	float: left;
+	text-decoration: none;
+	line-height: 100px;
+	color: black;
+	margin-left: 10px;
+}
+.startbar a:hover{
+	color: orange;
+}
+.startbar a img{
+	margin-top: 22.5px;
+	background: #FF6700;
+}
+.startbar .img{
+	float: left;
+	width: 165px;
+	height: 100px;
+	margin-left: 20px;
+	padding-top: 15px;
+
+}
+.startbar .search{
+	width: 52px;
+	height: 50px;
+	float: right;
+	margin-top: 25px;
+	border: solid 1px #E0E0E0;
+	border-left: none;
+	text-align: center;
+	line-height: 50px;
+}
+.startbar .frame{
+	width: 245px;
+	height: 50px;
+	float: right;
+	margin-top: 25px;
+	position: relative;
+	
+}
+.startbar .frame .text1{
+	display: block;
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	line-height: 20px;
+	right: 85px;
+	top: 18px;
+	text-align: center;
+	font-size: 10px;
+
+
+}
+.startbar .frame .text2{
+	display: block;
+	width: 74px;
+	height: 20px;
+	position: absolute;
+	text-align: center;
+	line-height: 20px;
+	right: 10px;
+	top: 18px;
+	font-size: 10px;
+}
+.startbar .frame input.tex{
+	display: block;
+	width: 245px;
+	height: 50px;
+	outline:none;
+	font-size: 16px;
+	font-weight: normal;
+	border: 1px solid #E0E0E0;
+}
+.startbar .frame input:focus{
+	border:1px solid #ff6700;
+}
+/* 轮播图样式 */
+.banner{
+	width: 1226px;
+	height: 460px;
+
+	margin: 0 auto;
+	position: relative;
+}
+.banner ul{
+	width: 100px;
+	height: 10px;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	right: 40px;
+	bottom: 20px;
+}
+
+
+.banner ul li{
+	width: 10px;
+	height: 10px;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 50%;
+	z-index: 2;
+	cursor: pointer;
+
+}
+
+.banner ul .active{
+	background-color: white;
+}
+.banner img{
+	display: block;
+	width: 1226px;
+	height: 460px;
+	position:absolute;
+	transition: all .5s;
+	opacity: 0;
+	top: 0;
+	left: 0;
+}
+.banner .leftbox{
+	width: 234px;
+	height: 460px;
+	background: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.banner .arrow{
+	width: 41px;
+	height: 69px;
+	background-image: url('../img/左右箭头.png') ;
+	background-position:-84px 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	left: 234px;
+}
+.banner .arrow:hover{
+	background-position:0 0;
+}
+.banner .arrow1{
+	width: 41px;
+	height: 69px;
+	background-image: url('../img/左右箭头.png') ;
+	background-position:-124px 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	right: 0px;
+}
+.banner .arrow1:hover{
+	background-position:-42px 0;
+}
+.banner .leftbox{
+
+	padding-top: 22px;
+}
+.banner .leftbox a{
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	line-height: 40px;
+	padding-left: 30px;
+
+	
+}
+.banner .leftbox a .ycBox{
+	display: none;
+	width:992px;
+	height: 460px;
+	position: absolute;
+	top:0;
+	left: 234px;
+	background-image: url("../img/mi-2.png");
+	background-size:cover;
+	font-size: 20px;
+	color:red;
+
+
+}
+.banner .leftbox a:hover{
+	background: #FF6700;
+}
+/* 小米推荐图 */
+.push{
+	width: 1226px;
+	height: 170px;
+	margin: 14px auto 0 auto;
+	margin-bottom: 26px;
+}
+.push .box1{
+	width: 234px;
+	height: 170px;
+	background: #5F5750;
+	float: left;
+	padding: 3px;
+}
+.push .box1 ul li{
+	float: left;
+	width: 76px;
+	height: 82px;
+	padding: 0 3px 0 3px;
+	position: relative;
+	padding-top: 18px;
+}
+.push .box1 ul li i{
+	display: block;
+	width: 70px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+}
+.push .box1 ul li .icon{
+	font-size:25px;
+	color: #CFCDCB;
+}
+.push .box1 ul li:hover .icon{
+	color: #ffffff;
+}
+.push .box1 ul li:hover h5{
+	color: #ffffff;
+}
+.push .box1 ul li h5{
+	color: #CFCDCB;
+	font-weight: normal;
+	font-size: 12px; 
+	text-align: center;
+	margin-top: 4px;
+}
+.push .box1 ul li:after{
+	content: "";
+	width: 1px;
+	height: 76px;
+	background: rgba(255, 255, 255, 0.05);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	right: 0;
+}
+.push .box1 ul li:before{
+	content: "";
+	width: 70px;
+	height: 1px;
+	background: rgba(255, 255, 255, 0.05);
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: 0;
+}
+.push .box1 ul li:nth-child(3):after{
+	content: none;
+}
+.push .box1 ul li:nth-child(6):after{
+	content: none;
+}
+
+.push .box1 ul li:nth-child(4):before{
+	content: none;
+}
+.push .box1 ul li:nth-child(5):before{
+	content: none;
+}
+
+.push .box1 ul li:nth-child(6):before{
+	content: none;
+}
+
+.push .box2{
+	width: 316px;
+	height: 170px;
+	background: red;
+	float: left;
+	margin-left: 14px;
+	transition: all .3s;
+}
+.push .box2:hover{
+	box-shadow: 3px 3px 9px #B9B9B9;
+	margin-top: -2px;
+}
+/* 小米闪购 */
+.sshop{
+	width: 1226px;
+	height: 58px;
+	margin: 0 auto;
+	text-align: left;
+	font-weight: normal;
+	line-height: 58px;
+
+}
+.sshop i{
+	display: block;
+	float: right;
+	width: 36px;
+	height: 24px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	margin-top: 17px;
+	text-align: center;
+	line-height: 24px;
+}
+.sshop i.icon{
+	border-right: none;
+
+}
+.sshop i.icon:hover{
+	color: orange;
+}
+.sshop i.icon1:hover{
+	color: orange;
+}
+
+.sbox{
+	width: 1226px;
+	height: 340px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.sbox .ycbigbox1{
+	width:992px;
+	height: 340px;
+	float: left;
+	overflow: hidden;
+}
+.sbox .bigbox1{
+
+	width:3678px;
+	height: 340px;
+	transition: all .5s;
+
+}
+.sbox .box1{
+	width: 234px;
+	height: 340px;
+	transition: all .3s;
+	float: left;
+	margin-left: 14px;
+}
+
+.sbox .box1:hover{
+	box-shadow: 3px 3px 9px #B9B9B9;
+	margin-top: -2px;
+}
+.sbox h2{
+	margin-top: 40px;
+	text-align: center;
+	font-weight: normal;
+	color: red;
+
+}
+.sbox h3{
+	margin-top: 40px;
+	text-align: center;
+	font-weight: normal;
+}
+.sbox .box{
+	width: 168px;
+	margin: 20px auto;
+}
+.sbox .sbox{
+	width: 46px;
+	height: 46px;
+	background: #5F5750;
+	float: left;
+	text-align: center;
+	line-height: 46px;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+.sbox .mbox{
+	float: left;
+	width: 15px;
+	height: 46px;
+	text-align: center;
+	line-height: 46px;
+	font-size: 30px;
+}
+
+
+
+.sbox img{
+	display: block;
+
+}
+.sbox h4{
+	font-size: 14px;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 10px;
+}
+.sbox h5{
+	text-align: center;
+	margin-top: 15px;
+	font-weight: normal;
+	color: #ADADAD;
+}
+.sbox h6{
+	text-align: center;
+	margin-top: 20px;
+	color: red;
+	font-weight: normal;
+
+}
+.sbox h6 span{
+	color: #ADADAD;
+	text-decoration: line-through;
+}
+.adv{
+	width: 1226px;
+	height: 120px;
+	margin: 40px auto;
+	margin-bottom: 40px;
+
+}
+.bigbox{
+	width: 100%;
+	background: #F5F5F5;
+	padding-top: 32px;
+	padding-bottom: 60px;
+}
+/* 第一个盒子的样式 */
+.iphoneh2{
+	width: 1226px;
+	height: 58px;
+	line-height: 58px;
+	margin: 0 auto;
+	font-weight: normal;
+}
+.iphoneh2 .abox{
+	float: right;
+	text-align: center;
+	width: 92px;
+	height: 58px;
+	line-height: 58px;
+	font-size: 16px;
+	transition: all 0.8s;
+}
+.iphoneh2 .abox:hover{
+	color: orange;
+}
+
+.bigbox .topbox{
+	width: 1226px;
+	height: 614px;
+	margin: 0 auto;
+	background: #F5F5F5;
+}
+.bigbox .topbox .leftbox{
+	width: 234px;
+	height: 614px;
+	float: left;
+}
+.bigbox .topbox .rightbox{
+	width: 992px;
+	height: 614px;
+	float: left;
+}
+.bigbox .topbox .rightbox .box{
+	float: left;
+	width: 234px;
+	height: 300px;
+	margin-left: 14px;
+	margin-bottom: 14px;
+	background: #ffffff;
+	transition: all .2s linear;
+}
+.bigbox .topbox .rightbox .box:hover{
+	box-shadow: 3px 3px 9px #B9B9B9;
+	margin-top: -2px;
+}
+.bigbox .topbox .rightbox .box:nth-child(4){
+	margin-top: 0px;	
+}
+.bigbox .topbox .rightbox .box img{
+	display: block;
+	margin: 20px auto;
+
+}
+.bigbox .topbox .rightbox .box h4{
+	font-size: 14px;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 10px;
+}
+.bigbox .topbox .rightbox .box h5{
+	text-align: center;
+	margin-top: 6px;
+	font-weight: normal;
+	color: #ADADAD;
+}
+.bigbox .topbox .rightbox .box h6{
+	text-align: center;
+	margin-top: 10px;
+	color: red;
+	font-weight: normal;
+
+}
+.bigbox .topbox .rightbox .box h6 span{
+	color: #ADADAD;
+	text-decoration: line-through;
+}
+/* 第二个盒子的样式 */
+.iphoneh2 .abox1{
+	float: right;
+	text-align: center;
+	height: 58px;
+	line-height: 58px;
+	margin-left: 20px;
+	font-size: 16px;
+	transition: all 0.8s;
+}
+.iphoneh2 .abox1:hover{
+	color: orange;
+	text-decoration: underline; 
+
+}
+.bigbox .twobox{
+	width: 1226px;
+	height: 614px;
+	margin: 0 auto;
+	background: #F5F5F5;
+}
+.bigbox .twobox .leftbox{
+	width: 234px;
+	height: 614px;
+	float: left;
+	overflow: hidden;
+}
+.bigbox .twobox .leftbox .box{
+	width: 234px;
+	height: 300px;
+
+}
+.bigbox .twobox .rightbox{
+	width: 992px;
+	height: 614px;
+	float: left;
+}
+.bigbox .twobox .rightbox .box{
+	float: left;
+	width: 234px;
+	height: 300px;
+	margin-left: 14px;
+	margin-bottom: 14px;
+	transition: all .2s linear;
+	background: #ffffff;
+}
+.bigbox .twobox .rightbox .box:hover{
+	box-shadow: 3px 3px 9px #B9B9B9;
+	margin-top: -2px;
+}
+.bigbox .twobox .rightbox .box img{
+	display: block;
+	margin: 20px auto;
+}
+
+.bigbox .twobox .rightbox .box h4{
+	font-size: 14px;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 10px;
+}
+.bigbox .twobox .rightbox .box h5{
+	text-align: center;
+	margin-top: 6px;
+	font-weight: normal;
+	color: #ADADAD;
+}
+.bigbox .twobox .rightbox .box h6{
+	text-align: center;
+	margin-top: 10px;
+	color: red;
+	font-weight: normal;
+
+}
+.bigbox .twobox .rightbox .box:nth-child(4){
+	margin-top: 0px;
+}
+.bigbox .twpbox .rightbox .box h6 span{
+	color: #ADADAD;
+	text-decoration: line-through;
+}
+/* 第三个盒子的样式 */
+.bigbox .threebox{
+	width: 1226px;
+	height: 614px;
+	margin: 0 auto;
+	background: #F5F5F5;
+}
+.bigbox .threebox .leftbox{
+	width: 234px;
+	height: 614px;
+	float: left;
+	overflow: hidden;
+}
+.bigbox .threebox .leftbox .box{
+	width: 234px;
+	height: 300px;
+
+}
+.bigbox .threebox .rightbox{
+	width: 992px;
+	height: 614px;
+	float: left;
+}
+.bigbox .threebox .rightbox .box{
+	float: left;
+	width: 234px;
+	height: 300px;
+	margin-left: 14px;
+	margin-bottom: 14px;
+	transition: all	 .2s linear;
+	background: #ffffff;
+	position: relative;
+	overflow: hidden;
+}
+
+.bigbox .threebox .rightbox .box:hover{
+	box-shadow: 3px 3px 9px #B9B9B9;
+	margin-top: -2px;
+
+}
+.bigbox .threebox .rightbox .box:hover .yc{
+	/* display: block; */
+	/* position: absolute;
+	left: 0px;
+	bottom:0px;
+	background:#FF6700;
+ */
+	transform: translateY(-110px);
+}
+.bigbox .threebox .rightbox .box:hover a{
+	color: #ffffff;
+}
+.bigbox .threebox .rightbox .box a{
+	display: block;
+	text-align: center;
+	color:  rgba(255, 255, 255, 0.0);
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+.bigbox .threebox .rightbox .box img{
+	display: block;
+	margin: 20px auto;
+}
+
+.bigbox .threebox .rightbox .box h4{
+	font-size: 14px;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 10px;
+}
+.bigbox .threebox .rightbox .box h5{
+	text-align: center;
+	margin-top: 6px;
+	font-weight: normal;
+	color: #ADADAD;
+}
+.bigbox .threebox .rightbox .box h6{
+	text-align: center;
+	margin-top: 10px;
+	color: red;
+	font-weight: normal;
+
+}
+.bigbox .threebox .rightbox .box h6 span{
+	color: #ADADAD;
+	text-decoration: line-through;
+}
+.bigbox .threebox .rightbox .box:nth-child(8){
+	width: 234px;
+	height: 143px;
+
+}
+
+.bigbox .threebox .rightbox .box:nth-child(9){
+	width: 234px;
+	height: 143px;
+	margin-bottom: 0;
+
+}
+.bigbox .threebox .rightbox .box:nth-child(4){
+	margin-top: 0px;
+
+}
+
+.bigbox .threebox .rightbox .box .xiao{
+	margin-top: 32px;
+	margin-right: 25px;
+	margin-bottom: 0;
+	float: right;
+}
+.bigbox .threebox .rightbox .box .textbox{
+	float: left;
+	margin-left: 30px;
+	padding-top: 50px;
+}
+.bigbox .threebox .rightbox .box .yc{
+	width: 234px;
+	height: 72px;
+	margin-top: 72px;
+	background: orange;
+	transition: all .25s ;
+/* 	background: rgba(255, 255, 255, 0.0);
+	position: absolute;
+
+
+	bottom: 0px;
+	left: 0px */
+
+/* 	display: none;
+ */
+}
+/* 第四个盒子样式 */
+
+
+.iphoneh2 .a{
+	display: block;
+	float: right;
+	width: 36px;
+	height: 24px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	margin-top: 17px;
+	text-align: center;
+	line-height: 24px;
+}
+/*.iphoneh2 .a{*/
+	/*border-right: none;*/
+
+/*}*/
+.iphoneh2 .a:hover{
+	color: orange;
+}
+
+
+.forebox{
+	width: 1226px;
+	height: 320px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.forebox .forbigbox{
+	width: 3678px;
+	height: 320px;
+	transition: all .5s;
+}
+
+
+.forebox ul li{
+	float: left;
+	width: 234px;
+	height: 300px;
+	margin-right: 14px;
+	background: #ffffff;
+	position: relative;
+	transition: all .3s;
+
+}
+.forebox ul li:hover{
+	box-shadow: 3px 3px 9px #B9B9B9;
+	margin-top: -2px;
+}
+.forebox ul li:nth-child(5){
+	margin-right: 0px;
+}
+.forebox ul li img{
+	display: block;
+	margin: 40px auto;
+}
+.forebox ul li dl{
+	position: absolute;
+	bottom: 30px;
+	text-align: center;
+	width: 100%
+}
+.forebox ul li dt{
+	font-size: 16px;
+
+}
+.forebox ul li dd{
+	font-size: 12px;
+	margin-top: 7px;	
+}
+.forebox ul li .many{
+	color: red;
+}
+.forebox ul li .hp{
+	color: rgba(0, 0, 0, 0.6);
+}
+/* 第六个盒子样式 */
+.sixbox{
+	width: 1226px;
+	height: 415px;
+
+	margin: 0 auto;
+
+}
+.sixbox ul li{
+	width: 296px;
+	height: 415px;
+	background: #ffffff;
+	float: left;
+	margin-left: 14px;
+	transition: all .5s;
+}
+.sixbox ul li img{
+	display: block;
+}
+.sixbox ul li .a1{
+	display: block;
+	width: 240px;
+	height: 72px;
+	margin: 28px auto;
+	margin-bottom:18px; 
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+}
+.sixbox ul li .text{
+	width: 100%;
+	height: 22px;
+	margin-top: 14px;
+	padding-left: 28px;
+
+}
+.sixbox ul li .text a{
+	color: rgba(0, 0, 0, 0.6);
+}
+.sixbox ul li .text span{
+	color:red;
+}
+.sixbox ul li:hover{
+
+	box-shadow: 3px 3px 9px #B9B9B9;
+	transform: translateY(-2px)
+}
+.sixbox ul li h6{
+	padding-left: 28px;
+	color: rgba(0, 0, 0, 0.2);
+}
+.sixbox ul li:nth-child(1){
+	margin-left: 0;
+
+}
+/* 第七层盒子样式 */
+.sevenbox{
+	width: 1226px;
+	height: 415px;
+    overflow: hidden;
+	margin: 0 auto;
+
+}
+.sevenbox ul li{
+	width: 296px;
+	height: 415px;
+	background: #ffffff;
+	float: left;
+	margin-left: 14px;
+	transition: all .5s;
+	position: relative;
+    overflow: hidden;
+}
+.sevenbox ul li .img1{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:296px;
+}
+
+.sevenbox ul li i.icon{
+	display: block;
+	width: 20px;
+	height: 48px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	border-bottom: 0px;
+	margin: auto 0;
+	left: 0px;
+	background: #E9E9E9;
+	line-height: 48px;
+	text-align: center;
+	color: #ffffff;
+	opacity: 0;
+	transition: all 1s;
+    z-index: 3;
+}
+.sevenbox ul li i.icon1{
+	display: block;
+	width: 20px;
+	height: 48px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	border-bottom: 0px;
+	margin: auto 0;
+	right: 0px;
+	background: #E9E9E9;
+	line-height: 48px;
+	text-align: center;
+	color: #ffffff;
+	opacity: 0;
+	transition: all 1s;
+    z-index: 3;
+}
+.sevenbox ul li:hover .icon{
+	opacity:1;
+
+}
+.sevenbox ul li:hover .icon1{
+	opacity:1;
+
+}
+.sevenbox ul li img{
+	display: block;
+}
+.sevenbox ul li .a1{
+	display: block;
+	width: 240px;
+	height: 72px;
+	margin: 28px auto;
+	margin-bottom:18px; 
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+}
+.sevenbox ul li .text{
+	width: 100%;
+	height: 22px;
+	margin-top: 14px;
+	text-align: center;
+
+}
+.sevenbox ul li .text a{
+	color: rgba(0, 0, 0, 0.6);
+}
+.sevenbox ul li .text span{
+	color:red;
+}
+.sevenbox ul li:hover{
+
+	box-shadow: 3px 3px 9px #B9B9B9;
+	transform: translateY(-2px)
+}
+.sevenbox ul li h6{
+	margin-top: 45px;
+	text-align: center;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.2);
+}
+.sevenbox ul li:nth-child(1){
+	margin-left: 0;
+
+}
+.sevenbox ul li .R{
+	width: 296px;
+	height: 30px;
+    position: absolute;
+    bottom: 15px;
+
+}
+.sevenbox ul li .R ul{
+	overflow: hidden;
+	padding-left: 118px;
+
+}
+.sevenbox ul li .R ul li{
+	width: 10px;
+	height:10px;
+	background: orange;
+	margin-top: 10px;
+	border-radius: 50%;
+	float: left;
+	margin-left: 5px;
+	transition: all .5s;
+}
+.sevenbox ul li .R ul li.active{
+    width: 10px;
+    height:10px;
+    border:1px solid orange;
+    background: none;
+
+}
+/* 第八个盒子样式 */
+.eigbox{
+	width: 1226px;
+	height: 285px;
+
+	margin: 0 auto;
+
+}
+.eigbox ul li{
+	width: 296px;
+	height: 285px;
+	background: #ffffff;
+	float: left;
+	margin-left: 14px;
+	transition: all .5s;
+	position: relative;
+}
+.eigbox ul li img{
+	display: block;
+}
+.eigbox ul li .a1{
+	display: block;
+	width: 240px;
+	height: 72px;
+	margin: 28px auto;
+	margin-bottom:18px; 
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+}
+.eigbox ul li .text{
+	width: 100%;
+	height: 22px;
+	margin-top: 20px;
+	text-align: center;		
+
+}
+.eigbox ul li .text a{
+	color: rgba(0, 0, 0, 0.6);
+}
+.eigbox ul li .text a:hover{
+	color: orange;
+}
+.eigbox ul li .text span{
+	color:red;
+}
+.eigbox ul li:hover{
+
+	box-shadow: 3px 3px 9px #B9B9B9;
+	transform: translateY(-2px)
+}
+.eigbox ul li h6{
+	margin-top: 12px;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.2);
+}
+.eigbox ul li:nth-child(1){
+	margin-left: 0;
+
+}
+.eigbox ul li i{
+	display: block;
+	width: 36px;
+	height: 24px;
+	border-radius: 10px;
+	border: 2px solid #ffffff;
+	position: absolute;
+	left: 20px;
+	top: 146px;
+	text-align: center;
+	transition: all .5s;
+}
+.eigbox ul li i.icon{
+	color: #ffffff;
+
+}
+.eigbox ul li:hover i{
+	background: orange;
+
+}
+/* 底部样式 */
+footer{
+	width: 100%;
+	background: #FFFFFF;
+}
+
+footer .top{
+	width: 1226px;
+	height: 80px;
+	background: #FFFFFF;
+	border-bottom: 1px solid #E0E0E0;
+	margin: 0 auto;
+
+
+}
+footer .top ul li{
+	float: left;
+	width: 242.73px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin-top: 27.5px;
+	border-right: 1px solid #E0E0E0;
+}
+footer .top ul li a{
+	text-decoration: none;
+	color: black;
+}
+footer .top ul li a:hover{
+	color: orange;	
+}
+footer .top ul li:nth-child(5){
+	border-right: none;
+}
+footer .zbox{
+	width: 1226px;
+	height: 192px;
+	background: #FFFFFF;
+	margin: 0 auto;
+
+}
+footer .zbox dl{
+	float: left;
+	width: 160px;
+	margin-top: 41px;
+}
+footer .zbox dl dt{
+	margin-bottom: 20px;
+}
+footer .zbox dl dd{
+	margin-top: 10px;
+	font-size: 12px;
+}
+footer .zbox dl dd a{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.6);
+
+
+}
+footer .zbox dl dd a:hover{
+	color: orange;	
+}
+footer .zbox dl:nth-child(6)
+{
+	border-right:  1px solid #E0E0E0;
+}
+footer .zbox .box{
+	float: left;
+	width: 252px;
+	height: 120px;
+	margin: 41px auto;
+}
+.bbottom{
+	width: 100%;
+	padding-top:30px;
+	padding-bottom: 30px;
+	background: #FAFAFA;
+
+}
+.bbottom .box{
+	width: 1226px;
+	margin: 0 auto;
+
+	overflow: hidden;
+	position: relative;
+
+}
+.bbottom .box img{
+	display: block;
+	float: left;
+	background: #FF6700;
+}
+.bbottom .box .text{
+	width: 688px;
+	height: 18px;
+	float: left;
+	margin-left: 4px;
+	
+}
+.bbottom .box .text a{
+	display: block;
+	height: 18px;
+	float: left;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 10px;
+	line-height: 18px;
+
+}
+.bbottom .box .text a:hover{
+	color: orange;	
+}
+.bbottom .box  p{
+	width: 688px;
+	display: block;
+	float: left;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 10px;
+	margin-left: 4px;
+}
+.bbottom .box .img1{
+	position: absolute;
+	top: 0;
+	right: 332px;
+
+}.bbottom .box .img2{
+	position: absolute;
+	top: 0;
+	right: 249px;
+
+}
+.bbottom .box .img3{
+	position: absolute;
+	top: 0;
+	right: 166px;
+
+}
+.bbottom .box .img4{
+	position: absolute;
+	top: 0;
+	right: 83px;
+
+}
+.bbottom .box .img5{
+	position: absolute;
+	top: 0;
+	right:0px;
+
+}
