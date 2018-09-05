@@ -333,3 +333,101 @@ function newBanner(imgs,btns,active,widths,leftbut,rightbut,banner,dealy = "2000
     }
 
 }
+
+
+
+
+
+
+
+
+function LB2(imgs1,btns1,widths1,rightB,leftB) {
+    let flag = true;
+    let now = 0;
+    let next = now + 1;
+    imgs1[0].style.left = 0;
+    btns1[0].classList.add("active");
+    //遍历轮播点，给轮播点加上点击事件
+    for(let i=0;i<btns1.length;i++){
+        btns1[i].onclick = function () {
+            //判断点击的是当前图片的前一张还是后一张
+            if(i>now){
+                //点击的轮播点对应的图片放在准备的位置
+                imgs1[i].style.left = `${widths1}px`;
+                //当前图片滑动
+                animate(imgs1[now],{left:-widths1});
+                btns1[now].classList.remove("active");
+                //点击的轮播点对应的图片滑动
+                animate(imgs1[i],{left:0});
+                btns1[i].classList.add("active");
+
+            }
+            //判断点击的是当前图片的前一张还是后一张
+            else if(i<now){
+                imgs1[i].style.left = `${-widths1}px`;
+                animate(imgs1[now],{left:widths1});
+                btns1[now].classList.remove("active");
+                animate(imgs1[i],{left:0});
+                btns1[i].classList.add("active");
+
+            }
+            //判断点击的是当前图片的前一张还是后一张
+            else if(i == now){
+                return;
+            }
+            now = i;
+
+
+        }
+
+
+    }
+    // 给右键设置事件
+    rightB.onclick = function () {
+        //开关
+        if(!flag){
+            return;
+        }
+
+
+
+        next = now + 1;
+        if(next == imgs1.length){
+            return;
+        }
+        flag = false;
+        imgs1[next].style.left = `${widths1}px`;
+        animate(imgs1[now],{left:-widths1});
+        btns1[now].classList.remove("active");
+        animate(imgs1[next],{left:0},function () {
+            flag = true;
+        });
+        btns1[next].classList.add("active");
+        now = next;
+
+    }
+    //给左键设置事件
+    leftB.onclick = function () {
+        // 开关
+        if(!flag){
+            return;
+        }
+
+        next = now - 1;
+        if(next == -1){
+            return
+        }
+        flag = false;
+        imgs1[next].style.left = `${-widths1}px`;
+        animate(imgs1[now],{left:widths1});
+        btns1[now].classList.remove("active");
+        animate(imgs1[next],{left:0},function () {
+            flag = true;
+        });
+        btns1[next].classList.add("active");
+        now = next;
+
+    }
+
+
+}
