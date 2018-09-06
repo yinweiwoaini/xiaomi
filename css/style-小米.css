@@ -42,6 +42,36 @@
 	background-image: url('../img/米米a3.png');
 	background-size: 30px 30px;
 }
+.backTop{
+    display: none;
+    width: 82px;
+    height: 90px;
+    position: fixed;
+    right: 0px;
+    top: 630px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+    line-height: 80px;
+
+}
+.backTop.iconfont{
+    font-size: 40px;
+    color:  rgba(0, 0, 0, 0.5);;
+}
+.backTop.iconfont .box{
+    font-size: 14px;
+    position: absolute;
+    left:0;
+    right: 0;
+    margin:auto 0;
+    bottom: -20px;
+
+
+
+
+}
+
+
 .butem h4{
 	font-weight: normal;
 	text-align: center;
@@ -1276,7 +1306,7 @@
 	color: #ffffff;
 
 }
-.eigbox ul li:hover i{
+.eigbox ul li .img:hover i{
 	background: orange;
 
 }
@@ -1303,6 +1333,11 @@ footer .top ul li{
 	text-align: center;
 	margin-top: 27.5px;
 	border-right: 1px solid #E0E0E0;
+}
+footer .top ul li i{
+    font-size: 18px;
+    margin-right: 5px;
+    color: rgba(0,0,0,0.9);
 }
 footer .top ul li a{
 	text-decoration: none;
@@ -1370,7 +1405,7 @@ footer .zbox .box{
 .bbottom .box img{
 	display: block;
 	float: left;
-	background: #FF6700;
+
 }
 .bbottom .box .text{
 	width: 688px;
